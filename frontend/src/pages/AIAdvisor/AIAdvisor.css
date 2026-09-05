@@ -1,0 +1,267 @@
+.ai-advisor-page {
+  padding: 30px;
+  background: #f7f8fc;
+  min-height: 100%;
+}
+
+.ai-advisor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.ai-advisor-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #202238;
+}
+
+.ai-advisor-header p {
+  margin: 6px 0 0;
+  color: #777b91;
+}
+
+.ai-online {
+  background: #e9f8f2;
+  color: #15966b;
+  padding: 9px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.advisor-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.advisor-chat-card,
+.advisor-insights-card {
+  background: white;
+  border: 1px solid #eceef5;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(30, 35, 60, 0.04);
+}
+
+.advisor-chat-card {
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+}
+
+.advisor-chat-header {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeF4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.advisor-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.advisor-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #6758df;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.advisor-profile strong {
+  display: block;
+  color: #292b3e;
+}
+
+.advisor-profile small {
+  display: block;
+  margin-top: 3px;
+  color: #85889b;
+  font-size: 11px;
+}
+
+.online-dot {
+  color: #15966b;
+  font-size: 12px;
+}
+
+.advisor-chat-body {
+  flex: 1;
+  padding: 25px;
+}
+
+.ai-message {
+  display: flex;
+  gap: 12px;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 9px;
+  background: #f0edff;
+  color: #6758df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.message-bubble {
+  max-width: 550px;
+  background: #f7f6ff;
+  padding: 15px 17px;
+  border-radius: 12px;
+}
+
+.message-bubble strong {
+  color: #292b3e;
+  font-size: 14px;
+}
+
+.message-bubble p {
+  margin: 7px 0 0;
+  color: #666a7e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.suggestion-title {
+  margin: 30px 0 12px;
+  color: #777b91;
+  font-size: 13px;
+}
+
+.suggestion-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.suggestion-buttons button {
+  background: white;
+  border: 1px solid #dedff0;
+  color: #6758df;
+  padding: 10px 13px;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.advisor-input-area {
+  display: flex;
+  gap: 10px;
+  padding: 18px 24px;
+  border-top: 1px solid #eeeeF4;
+}
+
+.advisor-input-area input {
+  flex: 1;
+  border: 1px solid #e1e3ec;
+  border-radius: 10px;
+  padding: 12px 14px;
+  outline: none;
+}
+
+.advisor-input-area button {
+  width: 45px;
+  border: none;
+  border-radius: 10px;
+  background: #6758df;
+  color: white;
+  cursor: pointer;
+}
+
+.advisor-insights-card {
+  padding: 24px;
+  height: fit-content;
+}
+
+.advisor-insights-card h3 {
+  margin: 0;
+  color: #292b3e;
+}
+
+.advisor-insights-card > p {
+  margin: 6px 0 20px;
+  color: #85889b;
+  font-size: 13px;
+}
+
+.quick-insight {
+  display: flex;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eeeeF4;
+}
+
+.quick-insight > span {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  background: #f0edff;
+  color: #6758df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.quick-insight strong {
+  display: block;
+  color: #292b3e;
+  font-size: 13px;
+}
+
+.quick-insight small {
+  display: block;
+  margin-top: 4px;
+  color: #85889b;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.advisor-status {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 13px;
+  border-radius: 10px;
+  background: #f7f8fc;
+  font-size: 12px;
+}
+
+.advisor-status strong {
+  color: #55596d;
+}
+
+.advisor-status span {
+  color: #15966b;
+}
+
+@media (max-width: 900px) {
+  .advisor-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .ai-advisor-page {
+    padding: 20px;
+  }
+
+  .ai-advisor-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+}

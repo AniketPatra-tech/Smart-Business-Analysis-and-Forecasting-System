@@ -1,0 +1,90 @@
+.settings-page {
+  padding: 30px;
+}
+
+.settings-page .page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.settings-page h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.settings-page p {
+  margin-top: 6px;
+  color: #777;
+}
+
+.primary-btn {
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  background: #6c63ff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.settings-card {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #eee;
+}
+
+.settings-card h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.settings-card p {
+  margin-bottom: 22px;
+}
+
+.settings-card label {
+  display: block;
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+
+.settings-card input[type="text"],
+.settings-card select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+.setting-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-option strong {
+  display: block;
+}
+
+.setting-option small {
+  display: block;
+  margin-top: 5px;
+  color: #888;
+}
+
+.setting-option input {
+  width: 18px;
+  height: 18px;
+}

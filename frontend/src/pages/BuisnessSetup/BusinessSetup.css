@@ -1,0 +1,426 @@
+.setup-page {
+  min-height: 100vh;
+  padding: 45px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(124, 58, 237, 0.12),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(59, 130, 246, 0.1),
+      transparent 30%
+    ),
+    #eef0fb;
+}
+
+.setup-card {
+  width: min(900px, 100%);
+  padding: 40px 50px;
+  border-radius: 24px;
+
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(120, 110, 200, 0.15);
+
+  box-shadow:
+    0 25px 70px rgba(60, 50, 130, 0.12);
+
+  backdrop-filter: blur(18px);
+}
+
+/* Brand */
+
+.setup-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.setup-logo {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 22px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6366f1,
+      #7c3aed
+    );
+}
+
+.setup-brand h2 {
+  margin: 0;
+  color: #171b3d;
+  font-size: 18px;
+}
+
+.setup-brand span {
+  color: #777c96;
+  font-size: 10px;
+}
+
+/* Progress */
+
+.setup-progress {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #9b9fb3;
+}
+
+.progress-step span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e0e1ee;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progress-step.active {
+  color: #5d4bd4;
+}
+
+.progress-step.active span {
+  color: white;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #7c3aed
+  );
+}
+
+.progress-step small {
+  font-size: 11px;
+}
+
+.progress-line {
+  width: 80px;
+  height: 2px;
+  margin: 0 10px;
+  background: #d9d9e8;
+}
+
+.progress-line.active {
+  background: #7562e8;
+}
+
+/* Heading */
+
+.setup-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.setup-heading h1 {
+  margin: 0;
+  color: #171b3d;
+  font-size: 32px;
+}
+
+.setup-heading p {
+  max-width: 560px;
+  margin: 10px auto 0;
+  color: #737892;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Form */
+
+.setup-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.setup-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.setup-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.setup-group > label {
+  color: #303653;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.setup-group input,
+.setup-group select {
+  height: 46px;
+  padding: 0 13px;
+
+  border: 1px solid #dcdcf0;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.65);
+  color: #303653;
+
+  outline: none;
+  font-size: 13px;
+}
+
+.setup-group input:focus,
+.setup-group select:focus {
+  border-color: #7061e8;
+
+  box-shadow:
+    0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Analysis */
+
+.analysis-options {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.analysis-option {
+  min-height: 70px;
+  padding: 12px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  border: 1px solid #deddef;
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.analysis-option:hover {
+  border-color: #7562e8;
+  transform: translateY(-2px);
+}
+
+.analysis-option input {
+  accent-color: #6366f1;
+}
+
+.analysis-option span {
+  color: #464b69;
+  font-size: 11px;
+}
+
+/* Data */
+
+.data-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  padding: 16px;
+
+  border-radius: 13px;
+  border: 1px dashed #bdb8ed;
+
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.data-icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.data-box strong {
+  color: #303653;
+  font-size: 13px;
+}
+
+.data-box p {
+  margin: 4px 0 0;
+  color: #777c96;
+  font-size: 10px;
+}
+
+.upload-later {
+  margin-left: auto;
+
+  border: 1px solid #7461e8;
+  border-radius: 8px;
+
+  padding: 8px 13px;
+
+  background: transparent;
+  color: #604bd8;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Actions */
+
+.setup-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.setup-back {
+  border: none;
+  background: transparent;
+  color: #737892;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.setup-continue {
+  padding: 13px 22px;
+
+  border: none;
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #7c3aed
+    );
+
+  color: white;
+  font-weight: 700;
+
+  box-shadow:
+    0 10px 25px rgba(99, 102, 241, 0.2);
+}
+
+/* Responsive */
+
+@media (max-width: 750px) {
+  .setup-card {
+    padding: 30px 22px;
+  }
+
+  .setup-form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .analysis-options {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .progress-line {
+    width: 35px;
+  }
+}
+
+@media (max-width: 500px) {
+  .setup-progress {
+    justify-content: flex-start;
+  }
+
+  .progress-step small {
+    display: none;
+  }
+
+  .analysis-options {
+    grid-template-columns: 1fr;
+  }
+
+  .data-box {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .upload-later {
+    margin-left: 57px;
+  }
+
+  .setup-actions {
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .setup-continue {
+    width: 100%;
+  }
+}
+.setup-error {
+  display: block;
+  margin-top: 2px;
+  color: #dc5c67;
+  font-size: 10px;
+  font-weight: 600;
+}
+.data-content {
+  flex: 1;
+}
+
+.upload-btn {
+  margin-left: auto;
+
+  padding: 9px 15px;
+
+  border: 1px solid #7461e8;
+  border-radius: 8px;
+
+  background: #7461e8;
+  color: white;
+
+  font-size: 11px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+}
+
+.upload-btn:hover {
+  background: #604bd8;
+  transform: translateY(-1px);
+}
+
+.selected-file {
+  margin-top: 7px;
+
+  color: #159669;
+
+  font-size: 10px;
+  font-weight: 600;
+}

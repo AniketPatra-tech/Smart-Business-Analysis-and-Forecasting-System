@@ -197,7 +197,7 @@ const areaPoints = [
           <div className="dashboard-logo">✦</div>
 
           <div>
-            <h2>BizIntel AI</h2>
+            <h2>Stratify</h2>
             <span>Business Intelligence</span>
           </div>
         </div>

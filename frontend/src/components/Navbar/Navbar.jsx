@@ -1,7 +1,7 @@
-function Navbar() {
+function Navbar({ onAbout, onHowItWorks, onContact }) {
   return (
     <header className="navbar">
-      
+
       <div className="brand">
         <div className="brand-logo">✦</div>
 
@@ -12,12 +12,43 @@ function Navbar() {
       </div>
 
       <nav>
-        <a href="#features">Features</a>
-        <a href="#how-it-works">How It Works</a>
-        <a href="#about">About</a>
+
+        <a href="#features">
+          Features
+        </a>
+
+        <button
+          onClick={onHowItWorks}
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            color: "inherit",
+            font: "inherit",
+          }}
+        >
+          How It Works
+        </button>
+
+        <button
+          onClick={onAbout}
+          style={{
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            color: "inherit",
+            font: "inherit",
+          }}
+        >
+          About
+        </button>
+
       </nav>
 
-      <button className="contact-btn">
+      <button
+        className="contact-btn"
+        onClick={onContact}
+      >
         Contact Us
       </button>
 

@@ -1,0 +1,285 @@
+.contact-section {
+  min-height: 100vh;
+  padding: 80px 60px;
+  background: #f8fafc;
+  color: #0f172a;
+  box-sizing: border-box;
+}
+
+.contact-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Badge */
+
+.contact-badge {
+  display: inline-block;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: #e0f2fe;
+  color: #2563eb;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Heading */
+
+.contact-section h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin: 0 0 20px;
+}
+
+.contact-section h1 span {
+  display: block;
+  color: #2563eb;
+}
+
+/* Description */
+
+.contact-description {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* Main Content */
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
+  text-align: left;
+}
+
+/* Cards */
+
+.contact-info,
+.contact-form {
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+/* Get In Touch Header */
+
+.contact-info-header {
+  margin-bottom: 32px;
+}
+
+.contact-small-title {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.contact-info-header h2 {
+  margin: 0 0 12px;
+  font-size: 26px;
+}
+
+.contact-info-header p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* Contact Items */
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #eff6ff;
+  border-radius: 12px;
+
+  font-size: 21px;
+}
+
+.contact-item h3 {
+  margin: 2px 0 5px;
+  font-size: 16px;
+  color: #0f172a;
+}
+
+.contact-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Note */
+
+.contact-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-top: 30px;
+  padding: 15px;
+
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-note span {
+  font-size: 20px;
+}
+
+.contact-note p {
+  margin: 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Form */
+
+.contact-form h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 13px 14px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #2563eb;
+}
+
+/* Send Button */
+
+.send-btn {
+  width: 100%;
+  padding: 13px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.send-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Back Button */
+
+.contact-back-btn {
+  margin-top: 35px;
+
+  padding: 12px 24px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-back-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-section h1 {
+    font-size: 38px;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .contact-section h1 {
+    font-size: 32px;
+  }
+
+  .contact-description {
+    font-size: 16px;
+  }
+
+  .contact-info,
+  .contact-form {
+    padding: 25px;
+  }
+
+}

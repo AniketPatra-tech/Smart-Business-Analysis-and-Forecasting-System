@@ -1,0 +1,412 @@
+/* =========================================
+   NAVBAR
+========================================= */
+
+.navbar {
+  height: 82px;
+  padding: 0 5%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 50;
+
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+
+/* =========================================
+   APP BACKGROUND
+   Makes other pages match landing page
+========================================= */
+
+.app {
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at 75% 20%,
+      rgba(124, 58, 237, 0.12),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 10% 80%,
+      rgba(99, 102, 241, 0.12),
+      transparent 25%
+    ),
+    #eef0fb;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.brand-logo {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #7c3aed
+  );
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 25px;
+
+  box-shadow:
+    0 8px 20px rgba(99, 102, 241, 0.25);
+
+  transition: 0.25s ease;
+}
+
+.brand h2 {
+  margin: 0;
+  font-size: 19px;
+}
+
+.brand span {
+  font-size: 10px;
+  color: #69708f;
+}
+
+
+/* =========================================
+   HOME BUTTON
+========================================= */
+
+.home-button {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+  margin: 0;
+
+  cursor: pointer;
+
+  color: inherit;
+  font-family: inherit;
+
+  text-align: left;
+}
+
+.home-button:hover .brand-logo {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(99, 102, 241, 0.35);
+}
+
+
+/* =========================================
+   DESKTOP NAVIGATION
+========================================= */
+
+.desktop-nav {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+
+.nav-link {
+  border: none;
+  background: transparent;
+
+  padding: 0;
+
+  color: #4f5575;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #6366f1;
+}
+
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.contact-btn {
+  border: 1px solid #8b7cf6;
+
+  background: transparent;
+
+  color: #5b43db;
+
+  padding: 11px 20px;
+
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.contact-btn:hover {
+  background: rgba(99, 102, 241, 0.06);
+
+  transform: translateY(-1px);
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-btn {
+  display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: transparent;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+  padding: 0;
+
+  z-index: 60;
+}
+
+.bar {
+  width: 19px;
+  height: 2px;
+
+  border-radius: 5px;
+
+  background: #5b43db;
+
+  transition: 0.25s ease;
+}
+
+.bar-one.open {
+  transform:
+    translateY(7px)
+    rotate(45deg);
+}
+
+.bar-two.open {
+  opacity: 0;
+}
+
+.bar-three.open {
+  transform:
+    translateY(-7px)
+    rotate(-45deg);
+}
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+.mobile-menu {
+  display: none;
+
+  position: absolute;
+
+  top: 74px;
+
+  left: 20px;
+  right: 20px;
+
+  padding: 12px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(126, 120, 220, 0.12);
+
+  box-shadow:
+    0 20px 45px rgba(47, 45, 100, 0.12);
+
+  z-index: 55;
+}
+
+.mobile-menu.active {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+
+/* =========================================
+   MOBILE LINKS
+========================================= */
+
+.mobile-nav-link {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: #4f5575;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.mobile-nav-link:hover {
+  background: rgba(99, 102, 241, 0.08);
+
+  color: #6366f1;
+}
+
+
+/* =========================================
+   MOBILE CONTACT
+========================================= */
+
+.mobile-contact-btn {
+  width: 100%;
+
+  margin-top: 5px;
+
+  padding: 12px 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #6366f1,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .desktop-nav,
+  .desktop-contact {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .navbar {
+    height: 72px;
+
+    padding: 0 20px;
+
+    background: transparent;
+
+    border: none;
+    box-shadow: none;
+  }
+
+  .brand {
+    gap: 9px;
+  }
+
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+
+    border-radius: 11px;
+
+    font-size: 22px;
+  }
+
+  .brand h2 {
+    font-size: 17px;
+  }
+
+  .brand span {
+    font-size: 9px;
+  }
+
+  .menu-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile-menu {
+    top: 65px;
+  }
+
+}

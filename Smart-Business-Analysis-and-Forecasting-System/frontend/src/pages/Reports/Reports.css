@@ -1,0 +1,176 @@
+.reports-page {
+  padding: 30px;
+  background: #f7f8fc;
+  min-height: 100%;
+}
+
+.reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.reports-header h1 {
+  margin: 0;
+  color: #202238;
+  font-size: 28px;
+}
+
+.reports-header p {
+  margin: 6px 0 0;
+  color: #777b91;
+}
+
+.generate-report-btn {
+  border: none;
+  background: #6758df;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.report-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.report-summary-card {
+  background: white;
+  border: 1px solid #eceef5;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.report-summary-card span {
+  display: block;
+  color: #777b91;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.report-summary-card strong {
+  font-size: 24px;
+  color: #27293d;
+}
+
+.reports-card {
+  background: white;
+  border: 1px solid #eceef5;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.reports-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reports-card-header h3 {
+  margin: 0;
+  color: #292b3e;
+}
+
+.reports-card-header p {
+  margin: 5px 0 0;
+  color: #85889b;
+  font-size: 13px;
+}
+
+.filter-btn {
+  border: 1px solid #e1e3ec;
+  background: white;
+  padding: 9px 14px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.report-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 18px 5px;
+  border-bottom: 1px solid #eeeeF4;
+}
+
+.report-row:last-child {
+  border-bottom: none;
+}
+
+.report-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background: #f0edff;
+  color: #6758df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.report-info {
+  flex: 1;
+}
+
+.report-info strong {
+  display: block;
+  color: #292b3e;
+  font-size: 14px;
+}
+
+.report-info span {
+  display: block;
+  margin-top: 4px;
+  color: #85889b;
+  font-size: 12px;
+}
+
+.report-date {
+  color: #85889b;
+  font-size: 12px;
+  min-width: 75px;
+}
+
+.download-report {
+  border: 1px solid #dedff0;
+  background: white;
+  color: #6758df;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .report-summary {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .report-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .report-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .report-date {
+    display: none;
+  }
+}
